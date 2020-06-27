@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Claculator</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <div id="container" >
+        <form name="calculator">
+        <div class="screen"><input type="text" name="display" id="scn" size="20" readonly maxlength="50px"></div>
+        <div class="btns ">
+            <p>
+                <input type="button" value="sin" class="btn top" onclick="fnsin()"> 
+                <input type="button" value="cos" class="btn top" onclick="fncos()">
+                <input type="button" value="tan" class="btn top" onclick="fntan()">
+                <input type="button" value="(-)" class="btn top">
+                <input type="button" value="CLR" class="btn top" onclick="Clear()">
+            </p>
+            <p>
+                <input type="button" value="&radic;" class="btn top" onclick="fnSquareRoot()">
+                <input type="button" value="x2" class="btn top" onclick="fnSquare()">
+                <input type="button" value="x^" class="btn top" onclick="fnAnyPow()">
+                <input type="button" value="LOG" class="btn top" onclick="btnClick(Math.LOG10(calculator.display.value))">
+                <input type="button" value="ln" class="btn top" onclick="btnClick(Math.log(calculator.display.value))">
+            </p>
+            <p>
+                <input type="button" value="|0|" class="btn top" onclick="fnAbs()">
+                <input type="button" value="(" class="btn top" onclick="btnClick('(')">
+                <input type="button" value=")" class="btn top" onclick="btnClick(')')">
+                <input type="button" value="M+" class="btn top" onclick="btnClick('M+')">
+                <input type="button" value="MOD" class="btn top" onclick="btnClick('%')">
+            </p>
+           
+            <p>
+                <input type="button" value="7" class="btn silver" onclick="btnClick(7)">
+                <input type="button" value="8" class="btn silver" onclick="btnClick(8)">
+                <input type="button" value="9" class="btn silver" onclick="btnClick(9)">
+                <input type="button" value="DEL" class="btn exit" onclick="Del()" >
+                <input type="button" value="AC" class="btn exit" onclick="AC()">
+            </p>
+            <p>
+                <input type="button" value="4" class="btn silver" onclick="btnClick(4)">
+                <input type="button" value="5" class="btn silver" onclick="btnClick(5)">
+                <input type="button" value="6" class="btn silver" onclick="btnClick(6)">
+                <input type="button" value="x" class="btn silver" onclick="btnClick('x')">
+                <input type="button" value="/" class="btn silver" onclick="btnClick('/')">
+            </p>
+            <p>
+                <input type="button" value="1" class="btn silver" onclick="btnClick(1)">
+                <input type="button" value="2" class="btn silver" onclick="btnClick(2)">
+                <input type="button" value="3" class="btn silver" onclick="btnClick(3)">
+                <input type="button" value="+" class="btn silver" onclick="btnClick('+')">
+                <input type="button" value="-" class="btn silver" onclick="btnClick('-')">
+            </p>
+            <p>
+                <input type="button" value="0" class="btn silver" onclick="btnClick(0)">
+                <input type="button" value="." class="btn silver" onclick="btnClick('.')">
+                <input type="button" value="EXP" class="btn silver" onclick="btnClick(Math.exp(calculator.display.value))">
+                <input type="button" value="&pi;" class="btn silver" onclick="btnClick(Math.PI)">
+                <input type="button" value="=" class="btn silver" onclick="Equalto()">
+            </p>
+
+
+        </div>
+    </form>
+    </div>
+    <div class="container"><h3 align="center">Made By Hafiza Bushra</h3></div>
+
+    
+</body>
+</html>
